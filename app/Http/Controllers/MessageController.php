@@ -25,4 +25,9 @@ class MessageController extends Controller
     {
         return view('message.night');
     }
+
+    public function word($msg)
+    {
+        return view('message.freeword', ['msg' => $msg]);
+    }
 }

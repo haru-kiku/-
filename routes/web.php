@@ -24,3 +24,5 @@ Route::get('/comments/afternoon', [App\Http\Controllers\MessageController::class
 Route::get('/comments/evening', [App\Http\Controllers\MessageController::class, 'evening']);
 
 Route::get('/comments/night', [App\Http\Controllers\MessageController::class, 'night']);
+
+Route::get('/comments/freeword/{msg}', [App\Http\Controllers\MessageController::class, 'word']);
