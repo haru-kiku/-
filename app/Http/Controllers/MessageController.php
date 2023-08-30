@@ -30,4 +30,12 @@ class MessageController extends Controller
     {
         return view('message.freeword', ['msg' => $msg]);
     }
+
+    public function random() 
+    {
+        $greeting = array("おはよう", "こんにちは", "こんばんは", "おやすみ");
+        $random_greeting = $greeting[array_rand($greeting, 1)];
+            return view('message.random', ['random_greeting'=> $random_greeting]);
+    }
+    
 }
